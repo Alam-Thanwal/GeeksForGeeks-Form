@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeeksForGeeks Form</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="javaScript.js"></script>
+
 </head>
 <body>
     <h1>GeeksForGeeks Form</h1>
@@ -12,31 +14,66 @@
     <form action="" id="form">
 
         <div class="form-control">
-            <label for="name" id="name">Name</label>
+            <label for="name">Name</label>
 
             <input type="text" placeholder="Enter Your Name" id="name">
         </div>
 
         <div class="form-control">
-            <label for="email" id="email">Email</label>
+            <label for="email">Email</label>
 
             <input type="email" id="email" placeholder="Enter Your Email">
         </div>
 
         <div class="form-control">
-            <label for="number" id="number">Mobile Number</label>
+            <label for="number">Mobile Number</label>
 
             <input type="number" id="number" placeholder="Enter Your Number">
         </div>
 
         <div class="form-control">
-            <label for="age" id="age">Age</label>
+            <label for="age">Age</label>
 
-            <input type="text" id="age" placeholder="Enter Your Age">
+            <input type="number" id="age" placeholder="Enter Your Age">
         </div>
 
 
+
+        <div class="form-control">
+            <label>
+                Would you recommend GeeksforGeeks
+                to a friend?
+            </label>
+           <label for="yes"><input type="radio" name="recommed">YES</label>
+           <label for="no"><input type="radio" name="recommed">NO</label>
+           <label for="Maybe"><input type="radio" name="recommed">Maybe</label>
+        </div>
+
+
+        <div class="form-control">
+            <label for="">Languages and Frameworks known <small>(Check all that apply)</small></label>
+
+            <label for="c"><input type="checkbox">C</label>
+            <label for="c++"><input type="checkbox">C++</label>
+            <label for="C#"><input type="checkbox">C#</label>
+            <label for="Java"><input type="checkbox">Java</label>
+            <label for="Python"><input type="checkbox">Python</label>
+            <label for="JavaScript"><input type="checkbox">JavaScript</label>
+            <label for="React"><input type="checkbox">React</label>
+            <label for="Angular"><input type="checkbox">Angular</label>
+        </div>
+
+
+        <div class="form-control">
+            <label>Any comments or suggestions</label>
+
+            <textarea name="text" id="text"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
     </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     
 </body>
 </html>

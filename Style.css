@@ -1,0 +1,30 @@
+body{
+    background-color: #05c46b;
+    font-family: Verdana;
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-control{
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-control label{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-control input{
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family:  inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
